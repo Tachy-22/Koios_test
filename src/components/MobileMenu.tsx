@@ -10,14 +10,15 @@ const MobileMenu = () => {
   };
   const navLinks = [
     { path: "/", text: "Home" },
-    { path: "/", text: "Features" },
-    { path: "/", text: "FAQs" },
-    { path: "/", text: "Contact" },
-    { path: "/ ", text: "sign up" },
+    { path: "/", text: "Engineering" },
+    { path: "/", text: "Software" },
+    { path: "/", text: "Edu-tech" },
+    { path: "/ ", text: "About Us" },
+    { path: "/ ", text: "Careers" },
   ];
 
   return (
-    <div className="md:hidden block">
+    <div className="md:hidden block max-w-screen ">
       <button
         onClick={toggleMobileMenu}
         className="block md:hidden text-gray-500 focus:outline-none text-3xl h-full"
@@ -25,7 +26,7 @@ const MobileMenu = () => {
         {!isMobileMenuOpen ? " ☰" : "  ✕"}
       </button>
       <div
-        className={`absolute backdrop-blur-3xl backdrop-brightness-50 top-20 left-0   bg-blue-00/80 z-50 w-screen flex items-center justify-center transition-transform duration-300 ease-in-out ${
+        className={`absolute  backdrop-blur-3xl backdrop-brightness-50 top-20 left-0   bg-blue-00/80 z-50 w-screen flex items-center justify-center transition-transform duration-300 ease-in-out ${
           isMobileMenuOpen ? "" : "translate-x-full "
         }`}
       >
