@@ -1,5 +1,6 @@
 import Logo from "./Logo";
 import Menu from "./Menu";
+import MobileMenu from "./MobileMenu";
 import ProgressBar from "./ui/ProgressBar";
 
 const Nav = () => {
@@ -8,6 +9,7 @@ const Nav = () => {
       <div className="max-w-7xl px-[2rem] flex justify-between mx-auto">
         <Logo size={`w-[5rem] h-[5rem]`} />
         <Menu />
+        <MobileMenu />
       </div>
       <ProgressBar />
     </div>

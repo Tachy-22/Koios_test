@@ -14,6 +14,7 @@ body {
   background: #181818;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
+  min-height: max-content;
 }
 
 @-moz-document url-prefix() {

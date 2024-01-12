@@ -11,7 +11,7 @@ const ProgressBar = () => {
     <motion.div
       ref={barRef}
       style={{ scaleX: scrollYProgress }}
-      className="h-2 w-full bg-yellow-500 rounded-r-[20rem] sticky origin-top-left top-0 left-0 z-50 "
+      className="h-2 w-full bg-yellow-500 rounded-r-[20rem] sticky origin-top-left top-[5rem] left-0 z-50 "
     />
   );
 };

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Allerta_Stencil } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 
@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className="">
+      <body className={`${inter.className}  min-h-max `}>
         <Nav />
         {children}
       </body>

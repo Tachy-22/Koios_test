@@ -1,25 +1,17 @@
 import {
   NavigationMenu,
   NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  NavigationMenuViewport,
 } from "./ui/navigation-menu";
-import {
-  Menubar,
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarSeparator,
-  MenubarShortcut,
-  MenubarTrigger,
-} from "./ui/menubar";
+
 import { ChevronRight } from "lucide-react";
+import React from "react";
 
 const Menu = () => {
+
   const menuItems = [
     {
       triggerText: "Engineering",
@@ -45,9 +37,9 @@ const Menu = () => {
   ];
 
   return (
-    <>
-      <NavigationMenu className="bg-transparent md:flex hidden ">
-        <NavigationMenuList className="flex gap-2">
+   
+      <NavigationMenu className="bg-transparent flex w-max  flex-grow-[2] text-white">
+        <NavigationMenuList className="md:flex hidden gap-2 justify-between  w-full">
           {menuItems.map((menuItem, index) => (
             <NavigationMenuItem key={index}>
               <NavigationMenuTrigger className="bg-transparent">
@@ -56,8 +48,8 @@ const Menu = () => {
               <NavigationMenuContent className="p-2 min-w-[30rem] flex flex-col md:gap-2">
                 {menuItem.content.map((contentItem, contentIndex) => (
                   <NavigationMenuLink
-                    className="hover:underline underline-offset-4 cursor-pointer w-full"
-                    key={contentIndex}
+                    className="hover:underline underline-offset-4 cursor-pointer w-full text-"
+                    key={`${contentIndex}-${contentItem}`}
                   >
                     {contentItem.linkText}
                   </NavigationMenuLink>
@@ -77,7 +69,7 @@ const Menu = () => {
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
-    </>
+
   );
 };
 
