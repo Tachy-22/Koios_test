@@ -26,8 +26,8 @@ const MobileMenu = () => {
         {!isMobileMenuOpen ? " ☰" : "  ✕"}
       </button>
       <div
-        className={`absolute  backdrop-blur-3xl backdrop-brightness-50 top-20 left-0   bg-blue-00/80 z-50 w-screen flex items-center justify-center transition-transform duration-300 ease-in-out ${
-          isMobileMenuOpen ? "" : "translate-x-full "
+        className={`absolute  backdrop-blur-3xl backdrop-brightness-50 top-20 left-0   bg-blue-00/80 z-40  flex items-center justify-center transition-transform duration-300 ease-in-out w-screen ${
+          isMobileMenuOpen ? "" : "-translate-y-[200%] "
         }`}
       >
         <ul className="flex  flex-col items-center py-[1rem] h-full w-full backdrop-blur-3xl bg-blue-00/80">
