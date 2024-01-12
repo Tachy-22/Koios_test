@@ -19,7 +19,7 @@ const Hero = () => {
         <AnimatedText
           el="h1"
           text={[" Implementing", " Your ideas to Reality"]}
-          className={`${allerta_Stencil.className} bg-clip-text fill-transparent bg-cover  bg-gradient-to-r from-yellow-500 font-extrabold via-sky-300 tracking-wider to-white text-4xl md:text-7xl w-fit leading-[3rem] md:leading-[5rem]  `}
+          className={`${allerta_Stencil.className} bg-clip-text fill-transparent bg-cover  bg-gradient-to-r from-yellow-500 from-[10%]  font-extrabold via-blue-500 tracking-tighter to-white text-4xl md:text-7xl w-fit leading-[3rem] md:leading-[5rem]  `}
           once
         />
         <AnimatedText
