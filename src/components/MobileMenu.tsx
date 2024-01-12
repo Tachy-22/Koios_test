@@ -25,7 +25,7 @@ const MobileMenu = () => {
         {!isMobileMenuOpen ? " ☰" : "  ✕"}
       </button>
       <div
-        className={`absolute backdrop-blur-3xl top-20 left-0   bg-blue-00/80 z-50 w-screen flex items-center justify-center transition-transform duration-300 ease-in-out ${
+        className={`absolute backdrop-blur-3xl backdrop-brightness-50 top-20 left-0   bg-blue-00/80 z-50 w-screen flex items-center justify-center transition-transform duration-300 ease-in-out ${
           isMobileMenuOpen ? "" : "translate-x-full "
         }`}
       >

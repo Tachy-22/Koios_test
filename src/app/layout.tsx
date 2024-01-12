@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="">
-      <body className={`${inter.className}  min-h-max `}>
+      <body className={`${inter.className}  min-h-max overflow-x-clip `}>
         <Nav />
         {children}
       </body>
