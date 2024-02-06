@@ -3,7 +3,6 @@ export const allerta_Stencil = Allerta_Stencil({
   subsets: ["latin"],
   weight: "400",
 });
-import Nav from "./Nav";
 import AnimatedText from "./ui/AnimatedText";
 
 const Hero = () => {

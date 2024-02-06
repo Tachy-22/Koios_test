@@ -1,6 +1,9 @@
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Stardos+Stencil:wght@400;700&display=swap');
 
 h1 {
@@ -8,10 +11,9 @@ h1 {
   font-family: 'Allerta Stencil';
   /* font-family: 'Stardos Stencil'; */
 }
-
 html,
 body {
-  background: #181818;
+  /* background: #181818; */
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
   min-height: max-content;
@@ -95,12 +97,11 @@ body {
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
 
-  body {
-    @apply bg-background text-foreground;
-  }
-}
+
+
+
+
+
+
+
